@@ -1,0 +1,50 @@
+/* .slider {
+    
+} */
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Felidae Regular';
+    font-size: 40px;
+    margin-top: 74px;
+}
+
+.slider__rings {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+
+
+}
+
+@keyframes scrollX {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.rings {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: auto;
+    animation: scrollX 30s linear infinite;
+}
+.ring {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EFEF;
+    width: 231px;
+    height: 236px;
+    margin-right: 74px;
+}
+ 

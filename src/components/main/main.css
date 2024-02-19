@@ -1,0 +1,20 @@
+main {
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EFEF;
+}
+
+.main-img{
+    display: flex;
+    justify-content: center;
+}
+.main-img img {
+    width: 1315px;
+}
+
+.scroll-down {
+    display: flex;
+    justify-content: center;
+}
+

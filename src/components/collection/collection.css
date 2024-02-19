@@ -1,0 +1,58 @@
+.collection {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+
+    gap: 30px;
+}
+
+.left__section {
+    column-gap: 30px;
+}
+
+
+.product__ {
+    background-color: #F2EFEF;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.product__inner {
+    display: flex;
+    justify-content: space-between;
+
+    transition: transform 400ms ease, background-position 200ms ease;
+    background-image: linear-gradient(to bottom, #F2EFEF 50%, #ECEEA5 50%);
+    background-size: 100% 200%;
+    background-position: 0 0;
+    transform-origin: left center;
+
+}
+
+.product__:hover .product__inner{
+    transform: scale(1.08);
+    background-position: 0 100%;
+}
+
+.title__prod {
+    align-self: flex-end ;
+    margin-bottom: 10px;
+    position: relative;
+    left: 20px;
+}
+.title__prod p {
+    font-family: 'Felidae Regular';
+    font-size: 30px;
+
+}
+
+.title__prod span {
+    font-family: 'TT Travels Light';
+    font-size: 20px;
+    color: #7E7979;
+}
+
+.img__prod {
+    margin: 0 auto;
+}

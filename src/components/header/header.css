@@ -1,0 +1,42 @@
+header, .head-left, .header__nav, .header__left-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header__main-logo img {
+    width: 178px;
+    height: 36px;
+}
+
+.head-left{
+    column-gap: 43px;
+}
+.header__nav {
+    column-gap: 25px;
+}
+
+.header__nav a {
+    font-family: 'TT Travels Regular';
+    color: #000;
+    text-decoration: none;
+    transition: text-decoration 0.8s ease;
+}
+.header__nav a:hover{
+    text-decoration: underline;
+}
+
+.header__left-logo {
+    column-gap: 13px;
+}
+
+.header__left-logo svg {
+    width: 35px;
+    height: 35px;
+}
+.header__left-logo svg:hover{
+    color: #b3b3b3;
+
+    
+}
