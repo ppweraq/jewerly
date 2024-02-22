@@ -11,6 +11,7 @@ main {
 }
 .main-img img {
     width: 1315px;
+    height: 713px;
 }
 
 .scroll-down {
@@ -18,3 +19,31 @@ main {
     justify-content: center;
 }
 
+
+@media (max-width: 1000px) {
+    .main-img img {
+        width: 850px;
+        height: 475px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-img img {
+        width: 580px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-img img {
+        width: 355px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main-img img {
+        width: 250px;
+        height: 140px;
+    } 
+}
