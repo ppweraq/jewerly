@@ -39,3 +39,7 @@ img, svg {
   /* max-width: 1240px; */
   margin: 30px;
 }
+
+ul {
+  list-style-type: none;
+}
