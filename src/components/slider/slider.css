@@ -47,4 +47,9 @@
     height: 236px;
     margin-right: 74px;
 }
+.ring img {
+  margin: 0 auto;
+  /* width: 100%; */
+  width: 166px;
+}
  

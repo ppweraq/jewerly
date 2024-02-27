@@ -1,0 +1,204 @@
+.product-container {
+  margin: 54px 85px;
+}
+.product__card-top {
+  display: flex;
+  gap: 59px;
+  padding-bottom: 57px;
+  border-bottom: 2px #a7a7a77c solid;
+}
+
+.product-image  img{
+  width: 613px;
+}
+.product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+.product-title {
+    padding-bottom: 42px;
+    border-bottom: 2px #a7a7a77c solid;
+
+}
+.product__collection-name {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  color: #d8c29d;
+}
+.product-name {
+  font-family: "Playfair Display";
+  font-size: 72px;
+  width: 673px;
+}
+.product-price {
+  font-family: "Playfair Display";
+  font-size: 48px;
+}
+.product-sub-description {
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #929292;
+  margin-top: 33px;
+}
+.product__desc-newline {
+  margin-top: 25px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 42px;
+}
+.product__data-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product__data-rating svg {
+  color: #d8c29d;
+  width: 25px;
+  height: 25px;
+}
+
+.product__review {
+  color: #929292;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+.product-rating button {
+  border: none;
+  background-color: #fff;
+}
+
+.product-rating svg {
+  height: 25px;
+  width: 25px;
+}
+
+.product-rating button{
+    transition: transform 0.2s ease;
+}
+
+
+.product-quantity {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 24px;
+    margin: 40px 0;
+}
+
+.product__count {
+    display: flex;
+    gap: 40px;
+}
+
+.product__count button {
+    border: none;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+.product__count button:hover, .product-rating button:hover  {
+    transform: scale(1.4);
+}
+.product-cart{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.product-cart button {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    border: none;
+    padding: 28px 0;
+    transition: background-color 0.6s ease;
+}
+.product-cart button:hover{
+    background-color: #929292;
+}
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+.product-desc__detail {
+    font-weight: bold;
+}
+
+.detail-number {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+.detail_delivery {
+    text-decoration: underline;
+}
+
+.product__card-descr {
+    display: flex;
+    /* justify-content: space-; */
+    gap: 103px;
+    margin-top: 64px;
+    font-family: 'Open Sans';
+    padding-bottom: 54px;
+    border-bottom: 2px #a7a7a77c solid;
+}
+
+.descr-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.descr-nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.descr-nav a:hover {
+    text-decoration: underline;
+}
+
+.descr-nav a.active{
+    padding: 12px;
+    transform: scale(1);
+    background-color: #000;
+    color: #fff;
+    width: auto;
+
+}
+
+.descr-text {
+    font-size: 20px;
+    color: #929292;
+}
+.product__similar {
+  margin-top: 64px;
+}
+.product__similar li {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.product-similar-item {
+  margin-top: 64px;
+  display: flex;
+  gap: 50px;
+}

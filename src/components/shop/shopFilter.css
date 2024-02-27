@@ -1,49 +1,47 @@
-.prod__container {
+.shop__container {
     width: 1143px;
     margin: 0 auto;
 }
 
-.products {
+.shops {
     display: flex;
     flex-direction: column;
 }
-.product__title {
+.shop__title {
     margin: 0 auto;
     font-family: 'Playfair Display Regular', serif;
     font-size: 49px;
     margin-bottom: 30px;
 }
 
-.product__nav{
+.shop__nav{
     display: flex;
     justify-content: center;
 }
 
-.product__list{
+.shop__list{
     border-right: 2px #22222252 solid;
     padding: 0 14px;
     margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-weight: 400;
 
 }
-.product__list:last-child {
+.shop__list:last-child {
     border-right: none;
 }
 
-.product__item a{
+.shop__item a{
     font-size: 20px;
     text-decoration: none;
     color: #22222252;
 }
 
-.product__link {
-    font-family: 'DM Sans';
-
-}
-.prod-ring a{
+.shop-ring a{
     color: #222222;
 }
 
-.product__filters {
+.shop__filters {
     display: flex;
     justify-content: center;
     align-items: center;

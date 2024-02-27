@@ -26,6 +26,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'DM Sans Regular';
+  src: url('./fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM-Sans-Bold';
+  src: url('./fonts/DMSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 img {
 	vertical-align: top;
 }
@@ -40,6 +54,6 @@ img, svg {
   margin: 30px;
 }
 
-ul {
+ul, li {
   list-style-type: none;
 }

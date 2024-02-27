@@ -1,0 +1,143 @@
+.container__items {
+  display: grid;
+  grid-template-columns: repeat(3, 367px);
+  grid-template-rows: repeat(4, 588px);
+
+  gap: 20px;
+  justify-content: center;
+
+  margin-top: 71px;
+}
+
+.item {
+  width: 367px;
+  height: 588px;
+}
+
+.item:hover .item__name a {
+  color: #d8c29d;
+}
+
+.item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #faf9f7;
+  height: 500px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.item__img img {
+  /* padding: 10px; */
+  margin: 0 auto;
+}
+.item__name a{
+  font-family: "Open Sans", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+}
+
+.item__price {
+  margin-top: 9px;
+  font-size: 20px;
+  color: #2222227c;
+  font-family: "Open Sans";
+}
+
+.item__img-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.item__img:hover .item__img-btn {
+  background-color: rgba(217, 217, 217, 0.671);
+  opacity: 1;
+}
+
+.right_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin: 20px;
+}
+
+.right_buttons button {
+  padding: 8px 16px;
+  /* margin-bottom: 10px; */
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 100%;
+  color: #000;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.right_buttons button:hover,
+.add-cart-btn button:hover {
+  background-color: #f0f0f0;
+}
+
+.add-cart-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.add-cart-btn button {
+  background-color: #fff;
+  color: #000;
+  padding: 20px 0;
+  border: none;
+  font-size: 16px;
+  width: 327px;
+}
+
+.pagination-container {
+  /* width: 545px; */
+  /* margin-top: 100px; */
+  margin: 100px auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.pagination__item, .pagination__link-a {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  color: #000;
+}
+.pagination__item:hover, .pagination__link-a:hover {
+color: #fff;
+  background-color: #D8C29D;
+}
+
+.pagination__link {
+  font-family: "Open Sans";
+  font-size: 20px;
+  text-align: center;
+  /* color: #000; */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
