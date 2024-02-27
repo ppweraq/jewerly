@@ -38,6 +38,10 @@ header, .head-left, .header__nav, .header__left-logo {
 .header__left-logo svg:hover{
     color: #b3b3b3;
 
+    cursor: pointer;
+    
+}
+.left-logo__cart {
     
 }
 

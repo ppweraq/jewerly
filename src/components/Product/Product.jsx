@@ -3,6 +3,7 @@ import "./product.css";
 import { useParams } from "react-router-dom";
 import { jewelry } from "../../jewelry.data";
 import Item from "../items/Item";
+import Cart from "../cart/Cart";
 
 const Product = () => {
   const { id } = useParams();
@@ -29,7 +30,7 @@ const Product = () => {
     <div className="product-container" key={product.id}>
       <div className="product__card-top">
         <div className="product-image">
-          <img src={`./img/${product.image}.png`} alt="" />
+          <img src={`/img/${product.image}.png`} alt="" />
         </div>
         <div className="product-description">
           <div className="product-title">

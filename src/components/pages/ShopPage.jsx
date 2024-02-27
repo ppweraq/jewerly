@@ -4,11 +4,11 @@ import Items from '../items/Items';
 import PaginationItems from '../items/PaginationItems';
 import { jewelry } from '../../jewelry.data';
 
-const ShopPage = () => {
+const ShopPage = ({setCartItems, cartItems, handleClick, handleFavoriteClick, isFavorite, addedCart}) => {
     return (
         <>
             <ShopFilter/>
-            <Items key={jewelry.id} jewelry={jewelry}/>
+            <Items key={jewelry.id} jewelry={jewelry} setCartItems={setCartItems} cartItems={cartItems} handleClick={handleClick} handleFavoriteClick={handleFavoriteClick} isFavorite={isFavorite} addedCart={addedCart}/>
             <PaginationItems/>
         </>
     );
