@@ -3,53 +3,93 @@
 } */
 
 .title {
-    display: flex;
-    justify-content: center;
-    font-family: 'Felidae Regular';
-    font-size: 40px;
-    margin-top: 74px;
+  display: flex;
+  justify-content: center;
+  font-family: "Felidae Regular";
+  font-size: 40px;
+  margin-top: 74px;
 }
 
 .slider__rings {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    user-select: none;
-
-
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
 }
 
 @keyframes scrollX {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 .rings {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    white-space: nowrap;
-    width: auto;
-    animation: scrollX 30s linear infinite;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  width: auto;
+  animation: scrollX 30s linear infinite;
 }
 .ring {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F2EFEF;
-    width: 231px;
-    height: 236px;
-    margin-right: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2efef;
+  width: 231px;
+  height: 236px;
+  margin-right: 74px;
 }
 .ring img {
   margin: 0 auto;
   /* width: 100%; */
   width: 166px;
 }
- 
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 30px;
+  }
+  .ring {
+    width: 200px;
+    height: 205px;
+    margin-right: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ring {
+    width: 180px;
+    height: 185px;
+    margin-right: 64px;
+  }
+  .ring img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 545px) {
+  .ring {
+    width: 100px;
+    height: 105px;
+    margin-right: 45px;
+  }
+  .ring img {
+    width: 85px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ring {
+    width: 60px;
+    height: 65px;
+    margin-right: 30px;
+  }
+  .ring img {
+    width: 45px;
+  }
+}

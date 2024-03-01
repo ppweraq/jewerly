@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import "./product.css";
 import { useParams } from "react-router-dom";
-import { jewelry } from "../../jewelry.data";
 import Item from "../items/Item";
-import Cart from "../cart/Cart";
 
-const Product = () => {
+const Product = ({ onPlus, jewelry, item }) => {
   const { id } = useParams();
+  const [activeTab, setActiveTab] = useState("about");
+  const [quantity, setQuantity] = useState(1);
+  const [addedCart, setAddedCart] = useState(false);
+  const handleClick = () => {
+    onPlus({ item });
+    setAddedCart(!addedCart);
+  };
+
   const productId = parseInt(id, 10);
   const product = jewelry.find((item) => item.id === productId);
-  const [activeTab, setActiveTab] = useState("about");
 
-  console.log(product);
-
-  const [quantity, setQuantity] = useState(1);
+  // console.log(product);
 
   const minusQuantity = () => {
     if (quantity > 1) {
@@ -24,7 +27,9 @@ const Product = () => {
   const plusQuantity = () => {
     setQuantity(quantity + 1);
   };
-  const similarProducts = jewelry.filter(item => item.category === product.category && item.id !== product.id);
+  const similarProducts = jewelry.filter(
+    (item) => item.category === product.category && item.id !== product.id
+  );
 
   return (
     <div className="product-container" key={product.id}>
@@ -105,8 +110,12 @@ const Product = () => {
               <button onClick={plusQuantity}>+</button>
             </div>
           </div>
-          <div className="product-cart">
-            <button>В КОРЗИНУ</button>
+          <div className="product-cart" key={item.id}>
+            {onPlus && (
+              <button onClick={handleClick}>
+                {addedCart ? "ДОБАВЛЕНО" : "В КОРЗИНУ"}
+              </button>
+            )}
           </div>
 
           <div className="product-detail">
@@ -149,16 +158,14 @@ const Product = () => {
           </p>
         </div>
       </div>
-        <div className="product__similar">
+      <div className="product__similar">
         <li>ПОХОЖИЕ ТОВАРЫ</li>
         <div className="product-similar-item">
-
           {similarProducts.map((item) => (
             <Item key={item.id} item={item} />
           ))}
         </div>
       </div>
-      
     </div>
   );
 };

@@ -8,7 +8,7 @@
   border-bottom: 2px #a7a7a77c solid;
 }
 
-.product-image  img{
+.product-image img {
   width: 613px;
 }
 .product-description {
@@ -18,9 +18,8 @@
   align-items: center;
 }
 .product-title {
-    padding-bottom: 42px;
-    border-bottom: 2px #a7a7a77c solid;
-
+  padding-bottom: 42px;
+  border-bottom: 2px #a7a7a77c solid;
 }
 .product__collection-name {
   font-family: "Open Sans";
@@ -79,120 +78,119 @@
   width: 25px;
 }
 
-.product-rating button{
-    transition: transform 0.2s ease;
+.product-rating button {
+  transition: transform 0.2s ease;
 }
 
-
 .product-quantity {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-size: 24px;
-    margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 24px;
+  margin: 40px 0;
 }
 
 .product__count {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .product__count button {
-    border: none;
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-size: 24px;
-    transition: transform 0.2s ease;
+  border: none;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 24px;
+  transition: transform 0.2s ease;
 }
-.product__count button:hover, .product-rating button:hover  {
-    transform: scale(1.4);
+.product__count button:hover,
+.product-rating button:hover {
+  transform: scale(1.4);
 }
-.product-cart{
-    width: 100%;
-    margin-bottom: 40px;
+.product-cart {
+  width: 100%;
+  margin-bottom: 40px;
 }
 .product-cart button {
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Open Sans';
-    font-size: 16px;
-    border: none;
-    padding: 28px 0;
-    transition: background-color 0.6s ease;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  border: none;
+  padding: 28px 0;
+  transition: background-color 0.6s ease;
 }
-.product-cart button:hover{
-    background-color: #929292;
+.product-cart button:hover {
+  background-color: #929292;
 }
 .product-detail {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 100%;
-    font-family: 'Open Sans';
-    font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  font-family: "Open Sans";
+  font-size: 16px;
 }
 .product-desc__detail {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .detail-number {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 12px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
 }
 .detail_delivery {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .product__card-descr {
-    display: flex;
-    /* justify-content: space-; */
-    gap: 103px;
-    margin-top: 64px;
-    font-family: 'Open Sans';
-    padding-bottom: 54px;
-    border-bottom: 2px #a7a7a77c solid;
+  display: flex;
+  /* justify-content: space-; */
+  gap: 103px;
+  margin-top: 64px;
+  font-family: "Open Sans";
+  padding-bottom: 54px;
+  border-bottom: 2px #a7a7a77c solid;
 }
 
 .descr-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .descr-nav a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 .descr-nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.descr-nav a.active{
-    padding: 12px;
-    transform: scale(1);
-    background-color: #000;
-    color: #fff;
-    width: auto;
-
+.descr-nav a.active {
+  padding: 12px;
+  transform: scale(1);
+  background-color: #000;
+  color: #fff;
+  width: auto;
 }
 
 .descr-text {
-    font-size: 20px;
-    color: #929292;
+  font-size: 20px;
+  color: #929292;
 }
 .product__similar {
   margin-top: 64px;
 }
 .product__similar li {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: bold;
   font-size: 24px;
 }
@@ -201,4 +199,132 @@
   margin-top: 64px;
   display: flex;
   gap: 50px;
+}
+
+@media (max-width: 1250px) {
+  .container__items {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 340px;
+    height: 450px;
+  }
+  .item__img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1142px) {
+  .item__name a {
+    font-size: 18px;
+  }
+  .item__price {
+    font-size: 14px;
+  }
+  .shop__container {
+    width: 800px;
+  }
+}
+@media (max-width: 782px) {
+  .container__items {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 300px;
+    height: 450px;
+  }
+  .item__img {
+    height: 350px;
+  }
+  .shop__container {
+    width: 600px;
+  }
+  .shop__title {
+    font-size: 30px;
+  }
+  .shop__item a {
+    font-size: 14px;
+  }
+  .filter__item {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 702px) {
+  .container__items {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    margin: 10px;
+    width: 220px;
+    height: 450px;
+  }
+  .item__img {
+    height: 350px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 646px) {
+  .container__items {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 220px;
+    height: 450px;
+  }
+  .item__img {
+    height: 280px;
+  }
+  .shop__container {
+    width: 300px;
+  }
+  .shop__title {
+    font-size: 25px;
+  }
+  .shop__item a {
+    font-size: 9px;
+  }
+  .filter__item {
+    font-size: 7px;
+  }
+  .filter__item svg {
+    display: none;
+  }
+}
+
+@media (max-width: 478px) {
+  .container__items {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 120px;
+    height: 200px;
+  }
+  .item__img {
+    height: auto;
+    width: auto;
+  }
+  .shop__container {
+    width: 200px;
+  }
+  .shop__title {
+    font-size: 18px;
+  }
+  .shop__item a {
+    font-size: 7px;
+  }
+  .filter__item {
+    font-size: 5px;
+  }
 }

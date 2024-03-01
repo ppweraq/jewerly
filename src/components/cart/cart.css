@@ -1,3 +1,7 @@
+body.modal{
+  overflow: hidden;
+}
+
 .cart-back-shadow {
   position: absolute;
   left: 0;
@@ -19,8 +23,11 @@
   display: flex;
   flex-direction: column;
 }
-
 .cart-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-nav-text {
   font-family: "Playfair Display";
   font-size: 48px;
   margin-bottom: 26px;
@@ -94,15 +101,14 @@
   top: -4px;
   margin: 0 5px;
 }
-/* .cart-buy-btn {
-
-    padding: 18px 0;
-} */
-.cart-buy-btn button {
+.cart-buy-btn a, .complete-back-btn a {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-decoration: none;
+  width: 100%;
   background-color: #d8c29d;
   color: #fff;
-  width: 100%;
-  height: 55px;
   font-family: "Inter";
   font-size: 16px;
   font-weight: 600;
@@ -111,10 +117,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.cart-buy-btn button:hover {
+.cart-buy-btn a:hover, .complete-back-btn a:hover {
   background-color: #7c705a;
 }
-.cart-buy-btn button:active {
+.cart-buy-btn a:active, .complete-back-btn a:active {
   background-color: #ddd2bc;
 }
 .line_cart {
@@ -126,4 +132,89 @@
   left: 0;
   right: 0;
   bottom: 174px;
+}
+
+
+
+@media (max-width: 860px){
+    .cart-container{
+      width: 550px;
+    }
+}
+
+@media (max-width: 550px){
+  .cart-container{
+    width: 100%;
+  }
+  .cart__item {
+    font-size: 10px;
+    gap: 8px;
+    padding: 8px;
+    border: 2px #d8c29d solid;
+    position: relative;
+    margin-bottom: 18px;
+  }
+  .cart-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+  .cart__item-remove-btn img{
+    right: 20px;
+}
+}
+
+@media (max-width: 475px){
+  .cart-nav-text {
+    font-size: 30px;
+  }
+  .cart-img {
+    width: 120px;
+    height: 120px;
+}
+.cart__item-remove-btn img{
+  right: 5px;
+  bottom: 5px;
+  width: 80px;
+}
+}
+
+@media (max-width: 400px){
+  .cart-nav-text {
+    font-size: 20px;
+  }
+  .cart__close {
+    width: 25px;
+    height: 25px;
+  }
+  .cart-img {
+    width: 55px;
+    height: 55px;
+}
+.cart__collection-name {
+  font-size: 8px;
+}
+.cart-name, .cart-price{
+  font-size: 12px;
+}
+.cart-items {
+  margin-bottom: 10px;
+}
+.cart__item {
+  font-size: 6px;
+}
+.cart__total {
+  font-size: 10px;
+}
+.line_cart {
+  margin-bottom: 5px;
+}
+.cart-buy-btn a{
+  padding: 8px;
+  font-size: 12px;
+}
+.cart__item-remove-btn img{
+  right: 5px;
+  bottom: 5px;
+  width: 80px;
+}
 }

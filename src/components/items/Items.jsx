@@ -3,13 +3,13 @@ import './items.css'
 import Item from './Item';
 
 
-const Items = ({jewelry, setCartItems, cartItems, handleClick, handleFavoriteClick, isFavorite, addedCart}) => {
+const Items = ({jewelry, onPlus, setCartItems, cartItems, handleClick, handleFavoriteClick, isFavorite, addedCart}) => {
 
-    const onCartToAdd = (obj) => {
-        const isItemInCart = cartItems.some(item => item.item.id === obj.item.id)
-        if(!isItemInCart) setCartItems(prev => [...prev, obj])
+    // const onCartToAdd = (obj) => {
+    //     const isItemInCart = cartItems.some(item => item.item.id === obj.item.id)
+    //     if(!isItemInCart) setCartItems(prev => [...prev, obj])
         
-    }
+    // }
 
 
 
@@ -20,9 +20,9 @@ const Items = ({jewelry, setCartItems, cartItems, handleClick, handleFavoriteCli
                 <Item
                     key={item.id}
                     item={item}
-                    onPlus={(obj)=>onCartToAdd(obj)}
+                    onPlus={onPlus}
                     // onFavorite={()=>console.log('лайкнули')}
-                    handleClick={handleClick} handleFavoriteClick={handleFavoriteClick} isFavorite={isFavorite} addedCart={addedCart}
+                    isFavorite={isFavorite} addedCart={addedCart}
                 />
             ))
            }

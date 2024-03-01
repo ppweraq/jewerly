@@ -6,7 +6,7 @@ const Item = ({ item, onPlus, onFavorite }) => {
   const [addedCart, setAddedCart] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
   const handleClick = () => {
-    onPlus({ item });
+    onPlus({item});
     setAddedCart(!addedCart);
   };
   const handleFavoriteClick = () => {
@@ -69,7 +69,7 @@ const Item = ({ item, onPlus, onFavorite }) => {
                 onPlus && (
 
               <button onClick={handleClick}>
-                {addedCart ? "+" : "ADD TO CART"}
+                {addedCart ? <img src="/img/done.gif" alt="done" style={{ width: '25px', height: '25px' }}/> : "ADD TO CART"}
               </button>
                 )
               }

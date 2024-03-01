@@ -29,19 +29,19 @@ const ShopFilter = () => {
                 
                 <div className="shop__filters">
                     <ul className="shop__filter-list">
-                        <li className="filter__item filter__item-first">Цена<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" stroke-linecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>
+                        <li className="filter__item filter__item-first">Цена<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" strokeLinecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>
                         
                     </ul>
                     <ul className="shop__filter-list">
-                        <li className="filter__item">Материал<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" stroke-linecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>
+                        <li className="filter__item">Материал<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" strokeLinecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>
                         
                     </ul>
                     <ul className="shop__filter-list">
-                        <li className="filter__item">Бренд<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" stroke-linecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>                        
+                        <li className="filter__item">Бренд<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" strokeLinecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>                        
                        
                     </ul>
                     <ul className="shop__filter-list">
-                        <li className="filter__item">Размер<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" stroke-linecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>                        
+                        <li className="filter__item">Размер<button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" strokeLinecap="square" d="m14 5l-6.5 7L1 5"/></svg></button></li>                        
                         
                     </ul>
                 </div>
