@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Cart = ({ onClose, onRemove, items }) => {
   const totalPrice = items.reduce((sum, obj) => {
     const price = parseFloat(obj.item.price);
-    console.log(price);
+    // console.log(price);
     return price + sum;
   }, 0);
   const taxPrice = parseFloat(totalPrice * 0.05);
