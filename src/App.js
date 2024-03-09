@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { jewelry } from "./jewelry.data";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
-import { jewelry } from "./jewelry.data";
 import Product from "./components/Product/Product";
-import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
 import ShopPage from "./components/pages/ShopPage";
 import Cart from "./components/cart/Cart";
@@ -23,7 +23,6 @@ function App() {
   };
   const onRemoveItem = (id) => {
     setCartItems((prev) => prev.filter((item) => item.item.id !== id));
-    // console.log(id);
   };
 
   useEffect(() => {
@@ -38,7 +37,6 @@ function App() {
     };
   }, [cartOpened]);
 
-  // console.log(cartOpened);
   return (
     <AppContext.Provider value={{ cartItems, cartOpened }}>
       <div className="App">
@@ -54,7 +52,7 @@ function App() {
             <CompleteOrder onCloseComplete={() => setCompleteOpened(false)} />
           )}
 
-          <Routes>
+          <Routes basename="/jewerly">
             <Route
               path="/"
               element={<Header onClickCart={() => setCartOpened(true)} />}
