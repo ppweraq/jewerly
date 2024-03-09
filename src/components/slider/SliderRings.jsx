@@ -27,7 +27,6 @@ const SliderRings = () => {
                         </div> 
                     ))}
                 </div>
-
             </div>
             
 
