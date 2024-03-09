@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jewerly/static/css/main.ab933fde.css",
-    "main.js": "/jewerly/static/js/main.7431ae7b.js",
-    "static/media/TTTravels-Light.ttf": "/jewerly/static/media/TTTravels-Light.a352a5270863e74646ea.ttf",
-    "static/media/TTTravels-Regular.ttf": "/jewerly/static/media/TTTravels-Regular.92a0c3030c288ad87583.ttf",
-    "static/media/DMSans-Regular.ttf": "/jewerly/static/media/DMSans-Regular.96d887177cb80224e4fd.ttf",
-    "static/media/DMSans-Bold.ttf": "/jewerly/static/media/DMSans-Bold.98c5544712050fe179a5.ttf",
-    "static/media/Felidae-Regular.ttf": "/jewerly/static/media/Felidae-Regular.a16fd19c02a39829eb8f.ttf",
-    "index.html": "/jewerly/index.html",
-    "main.ab933fde.css.map": "/jewerly/static/css/main.ab933fde.css.map",
-    "main.7431ae7b.js.map": "/jewerly/static/js/main.7431ae7b.js.map"
+    "main.css": "/static/css/main.87ae86c1.css",
+    "main.js": "/static/js/main.67c839dd.js",
+    "static/media/TTTravels-Light.ttf": "/static/media/TTTravels-Light.a352a5270863e74646ea.ttf",
+    "static/media/TTTravels-Regular.ttf": "/static/media/TTTravels-Regular.92a0c3030c288ad87583.ttf",
+    "static/media/DMSans-Regular.ttf": "/static/media/DMSans-Regular.96d887177cb80224e4fd.ttf",
+    "static/media/DMSans-Bold.ttf": "/static/media/DMSans-Bold.98c5544712050fe179a5.ttf",
+    "static/media/Felidae-Regular.ttf": "/static/media/Felidae-Regular.a16fd19c02a39829eb8f.ttf",
+    "index.html": "/index.html",
+    "main.87ae86c1.css.map": "/static/css/main.87ae86c1.css.map",
+    "main.67c839dd.js.map": "/static/js/main.67c839dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab933fde.css",
-    "static/js/main.7431ae7b.js"
+    "static/css/main.87ae86c1.css",
+    "static/js/main.67c839dd.js"
   ]
 }
