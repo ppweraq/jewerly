@@ -1,2 +1,2 @@
 website
-https://todo-testapp.netlify.app/
+https://jewelry-testapp.netlify.app/
